@@ -8,8 +8,8 @@
       "start": "node bot.js"
   },
   "dependencies": {
-    "discord.io": "11.1.0",
-    "winston": "2.4.2"
+    "discord.io": "^2.5.3",
+    "winston": "^2.4.2"
   },
   "engines": {
    "node": "5.2.0"

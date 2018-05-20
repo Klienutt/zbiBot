@@ -10,7 +10,7 @@
   "dependencies": {
     "discord.io": "11.1.0",
     "winston": "2.4.2"
-  }
+  },
   "engines": {
    "node": "5.2.0"
   }

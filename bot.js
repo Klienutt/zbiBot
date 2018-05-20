@@ -1,4 +1,4 @@
-var Discord = require('discord.io');
+var Discord = require('discord.io-gateway6');
 var logger = require('winston');
 var auth = require('./auth.json');
 var id="";

@@ -1,0 +1,2 @@
+# zbiBot
+Mutual swearing partner.

@@ -106,7 +106,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		state=0;
 		bot.sendMessage({
                    to: channelID,
-                   message: 'lli 7bitih al7lo'
+                   message: 'lli 7bb lghzal'
         });
 	}
 	else{

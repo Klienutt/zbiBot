@@ -124,7 +124,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 	if( cmd.includes("9lawi") || cmd.includes("qlawi") || cmd.includes("qlwa") || cmd.includes("9alwa") || cmd.includes("9liwat") )
 		bot.sendMessage({
                     to: channelID,
-                    message: 'ahya' + userID + 'jma3 krk'
+                    message: 'ahya ' + user + ' jma3 krk'
                 });
 	} 
    }

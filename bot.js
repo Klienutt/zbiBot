@@ -36,8 +36,6 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		});
 
 	    }
-	    else if(message.include "zbiBot chrchm ")
-		    id = message.substring(13)
 	    else if( message == "zbiBot mod ramdan" )
 	    {	
 		state=1;

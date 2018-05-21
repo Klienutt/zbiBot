@@ -126,11 +126,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'ahya ' + user + ' jma3 krk'
                 });
-	if( user != "Klienutt")
-		bot.sendMessage({
-                    to: channelID,
-                    message: 'ahya ' + userID + ' jma3 krk'
-                });
+
 	} 
    }
     }	

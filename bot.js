@@ -26,8 +26,8 @@ function rnd(min, max)
 }
 
 bot.on('message', function (user, userID, channelID, message, evt) {
-    if(user != "zbiBot"){
-	    if( message == "zbiBot aji" )
+    if(user != "hafni"){
+	    if( message == "hafni aji" )
 	    {	
 		id=userID;
 		bot.sendMessage({
@@ -36,7 +36,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		});
 
 	    }
-	    else if( message == "zbiBot mod ramdan" )
+	    else if( message == "hafni mod ramdan" )
 	    {	
 		state=1;
 		bot.sendMessage({
@@ -52,7 +52,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 	    else{
 	    if (userID == id)
 	    {
-		if( message == "zbiBot 9owd")
+		if( message == "hafni 9owd")
 		{	
 			id = "";
 			bot.sendMessage({
@@ -103,7 +103,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		}
 	    }
 	    else if(state ==1 ){
-		if(message == "zbiBot rye7")
+		if(message == "hafni rye7")
 		{
 			state=0;
 			bot.sendMessage({

@@ -26,7 +26,7 @@ function rnd(min, max)
 }
 
 bot.on('message', function (user, userID, channelID, message, evt) {
-    if(user != "hafni"){
+    if(user != "zbiBot"){
 	    if( message == "hafni aji" )
 	    {	
 		id=userID;

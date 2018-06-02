@@ -30,7 +30,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     if(user != "zbiBot"){
 	    if( message == "hafni aji" )
 	    {	
-		id=userID;
+		id=user;
 		bot.sendMessage({
 			   to: channelID,
 			   message: 'oue jbilo'
@@ -42,7 +42,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		    id=message.split(' ')[2];
 		    bot.sendMessage({
 			   to: channelID,
-			   message: user + '79 sidirbbi tzid hdra joj ntalla3 ydddi m3a khroztk awld lmt9oba'
+			   message: id + ' 79rb ita tzid hdra joj ntalla3 ydddi m3a khroztk'
 			 });
 		    nik=1;
 		    
@@ -61,7 +61,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
 	    }
 	    else{
-	    if (userID == id)
+	    if (user == id)
 	    {
 		
 		if(nik ==1 )

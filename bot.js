@@ -86,7 +86,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		    case 1:
 			bot.sendMessage({
 			    to: channelID,
-			    message: '79rb ita nfarrag tabon mok o n7chi yddi o 2 toes'
+			    message: 'rah nchddk nfarrag ltabon mok chla9m o n7chi yddi o 2 toes'
 			});
 		    break;
 		    case 2:
@@ -98,7 +98,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		    case 3:
 			bot.sendMessage({
 			    to: channelID,
-			    message: 'aji ha mssli 9liwati alwasa3 blast matdi'
+			    message: 'aji ha l7sli l9lawi blast matdwi'
 			});
 		    break;
 		    case 4:
@@ -195,6 +195,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			    to: channelID,
 			    message: 'ahya ' + user + ' jma3 krk'
 			});
+		if( cmd.includes("tbn") || cmd.includes("tabon") || cmd.includes("tbon") || cmd.includes("tebon") || cmd.includes("tbibn") )
+			bot.sendMessage({
+			    to: channelID,
+			    message: 'ahya ' + user + ' jma3 krk'
+			});
+		if( cmd.includes("9wd") || cmd.includes("9owd") || cmd.includes("qwd") || cmd.includes("qwed") || cmd.includes("qowd") )
+			bot.sendMessage({
+			    to: channelID,
+			    message: user + ' ta nod tchallal awld l9a7ba'
+			});
+		
 		}
 		} 
 	   }

@@ -4,6 +4,7 @@ var auth = require('./auth.json');
 var id="";
 var state=0;
 var vise=0;
+var nik=0;
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console, {
@@ -34,7 +35,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			   to: channelID,
 			   message: 'oue jbilo'
 		});
-
+		nik=0;
+	    }
+	    else if( message.includes("hafni atak ") )
+	    {    
+		    id=message.split(' ')[2];
+		    bot.sendMessage({
+			   to: channelID,
+			   message: user + '79 sidirbbi tzid hdra joj ntalla3 ydddi m3a khroztk awld lmt9oba'
+			 });
+		    nik=1;
+		    
 	    }
 	    else if( message == "hafni mod ramdan" )
 	    {	
@@ -52,6 +63,61 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 	    else{
 	    if (userID == id)
 	    {
+		
+		if(nik ==1 )
+		{
+		if( message == "hafni t7awa")
+		{	
+			id = "";
+			bot.sendMessage({
+				   to: channelID,
+				   message: 'zid o matdorch'
+			 });
+		}
+		else{
+		var k=rnd(0,5);
+		switch(k) {
+		    case 0:
+			bot.sendMessage({
+			    to: channelID,
+			    message: 'ser aazaml la nleggilk rkbti ft9obtk'
+			});
+		    break;
+		    case 1:
+			bot.sendMessage({
+			    to: channelID,
+			    message: '79rb ita nfarrag tabon mok o n7chi yddi o 2 toes'
+			});
+		    break;
+		    case 2:
+			bot.sendMessage({
+			    to: channelID,
+			    message: 'atskot t9owd 9bl manrfa3 l9a7ba ymmak fog zbbi'
+			});
+		    break;
+		    case 3:
+			bot.sendMessage({
+			    to: channelID,
+			    message: 'aji ha mssli 9liwati alwasa3 blast matdi'
+			});
+		    break;
+		    case 4:
+			bot.sendMessage({
+			    to: channelID,
+			    message: 'ahah zid'
+			});
+		    break;
+		    case 5:
+			bot.sendMessage({
+			    to: channelID,
+			    message: 'ansaynk ta tsali mnhdra o nkhowr dinmmok bzabba ta3i '
+			});
+		    break;
+			}
+		}
+		}   
+		if(nik !=1 )
+		{
 		if( message == "hafni 9owd")
 		{	
 			id = "";
@@ -60,7 +126,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				   message: 'roule a3chiri'
 			 });
 		}
-		else{	
+		else{
 		var k=rnd(0,5);
 		switch(k) {
 		    case 0:
@@ -100,6 +166,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			});
 		    break;
 			}
+		}
 		}
 	    }
 	    else if(state ==1 ){
